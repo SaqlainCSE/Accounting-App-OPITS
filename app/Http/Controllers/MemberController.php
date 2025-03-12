@@ -97,5 +97,5 @@ class MemberController extends Controller
         $member->update($data);
 
         return redirect()->route('membersList')->with('success', 'Member updated successfully!');
-        }
+    }
 }
