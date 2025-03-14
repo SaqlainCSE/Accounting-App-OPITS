@@ -3,13 +3,12 @@
 namespace App\Models;
 
 use App\Enums\CategoryEnum;
-use Spatie\Enum\Laravel\HasEnums;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class SanchayaKhatian extends Model
 {
-    use HasFactory, HasEnums;
+    use HasFactory;
 
     protected $fillable = [
         'member_no',

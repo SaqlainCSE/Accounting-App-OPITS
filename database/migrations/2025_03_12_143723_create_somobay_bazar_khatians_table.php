@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('category')->comment('10 = Kroy, 11 = Bikroy');
             $table->string('present_stock')->nullable();
             $table->string('product_count')->nullable();
-            $table->decimal('product_price', 10, 5)->nullable();
-            $table->decimal('total_amount', 10, 5)->nullable();
+            $table->string('product_price')->nullable();
+            $table->string('total_amount')->nullable();
             $table->text('comments')->nullable();
             $table->string('user_name')->nullable();
             $table->timestamps();

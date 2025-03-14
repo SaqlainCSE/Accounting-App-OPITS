@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class KorjoKhatian extends Model
 {
-    use HasFactory, HasEnums;
+    use HasFactory;
 
     protected $fillable = [
         'member_no',

@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('member_no');
             $table->string('member_name');
             $table->string('category')->comment('1 = Shadharon, 2 = Ponno, 3 = Mashik, 4 = Osthaye, 5 = Policy, 6 = Ekkalin');
-            $table->decimal('sanchaya_aday', 10, 5)->nullable();
-            $table->decimal('asol_aday', 10, 5)->nullable();
-            $table->decimal('munafa_aday', 10, 5)->nullable();
-            $table->decimal('service_charge', 10, 5)->nullable();
-            $table->decimal('total', 10, 5)->nullable();
+            $table->string('sanchaya_aday')->nullable();
+            $table->string('asol_aday')->nullable();
+            $table->string('munafa_aday')->nullable();
+            $table->string('service_charge')->nullable();
+            $table->string('total')->nullable();
             $table->text('comments')->nullable();
             $table->string('user_name')->nullable();
             $table->timestamps();
